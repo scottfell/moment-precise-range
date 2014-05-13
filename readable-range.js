@@ -67,23 +67,23 @@
         }
         var result = [];
 
-        if (yDiff) {
-            result.push(pluralize(yDiff, 'year'));
+         if (yDiff) {
+            result.push('<span class="mpYear">'+pluralize(yDiff, 'year')+'</span>');
         }
         if (mDiff) {
-            result.push(pluralize(mDiff, 'month'));
+            result.push('<span class="mpMonth">'+pluralize(mDiff, 'month')+'</span>');
         }
         if (dDiff) {
-            result.push(pluralize(dDiff, 'day'));
+            result.push('<span class="mpDay">'+pluralize(dDiff, 'day')+'</span>');
         }
         if (hourDiff) {
-            result.push(pluralize(hourDiff, 'hour'));
+            result.push('<span class="mpHour">'+pluralize(hourDiff, 'hour')+'</span>');
         }
         if (minDiff) {
-            result.push(pluralize(minDiff, 'minute'));
+            result.push('<span class="mpMinute">'+pluralize(minDiff, 'minute')+'</span>');
         }
         if (secDiff) {
-            result.push(pluralize(secDiff, 'second'));
+            result.push('<span class="mpSecond">'+pluralize(secDiff, 'second')+'</span>');
         }
 
         return result.join(STRINGS.delimiter);
